@@ -1,5 +1,4 @@
 import requests
-import json
 
 def launch_settings(mode=None, set_type=None):
     def select_mode():
@@ -37,4 +36,18 @@ if __name__ == "__main__":
     headers = {"User-Agent": f"collecting data for portfolio project, {settings[0]} (Chaotic#1161)"}
     response = requests.get(url, headers=headers)
 
+"""
+TO DO
 
+DATA:
+Design databasen (Split json response op)
+Lav funktion til at indsætte i databasen
+
+FRONTEND:
+Sketches til hjemmeside (Home/item)
+
+MISC:
+Bestem om backend eller clientside fokus for udregninger
+JS eller Python (probably js)
+
+"""
